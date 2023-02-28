@@ -1,0 +1,322 @@
+
+
+h1, h2, h3, h4, h5, h6
+  font-family: $font_bodoniModa
+  font-weight: bold
+
+ul
+  padding-left: 1.5em
+
+  &>br
+    display: none
+
+.wp-block-image.align
+  &right
+    float: right
+    margin-left: 40px
+  &left
+    float: left
+    margin-right: 40px
+
+.iframer
+  height: 0
+  padding-bottom: 56.25%
+  width: 100%
+  position: relative
+  margin-bottom: 16px
+
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+
+
+.wp-block-separator
+  clear: both
+
+
+.table-doublecolomne
+  &>br
+    display: none
+
+  table
+    padding-top: 1em
+    width: 100%
+    display: block
+
+    tr
+      display: flex
+      align-items: flex-start
+      flex-wrap: wrap
+
+    td
+      width: 50%
+      border: 0
+      padding: 0 0 1em
+      vertical-align: top
+
+      +mediaMaxWidth(990px)
+        width: 100% !important
+
+        img
+          display: none !important
+
+      &:first-child
+        padding-right: 40px
+
+    img
+      width: 100%
+      height: auto
+
+
+.entry-content, .post_content
+  font-size: 22px
+  line-height: 1.5em
+
+  +clearfix
+
+
+  .alignright
+    float: right
+  .alignleft
+    float: left
+
+  .aligncenter
+    width: 100%
+
+  *
+    word-break: break-word
+
+  p
+    padding-bottom: 1em
+
+  ul
+    padding: 1em 0 1em 1.5em
+
+    li
+      list-style: disc
+      margin-bottom: .5em
+      line-height: 1.5em
+
+      ul
+        li
+          list-style: circle
+
+  hr
+    margin: 24px auto
+    display: block
+    max-width: 358px
+
+  a
+    color: $color_blue
+    text-decoration: underline
+
+    &:hover
+      text-decoration: none
+
+    &:visited
+      color: #CC00CC
+
+    &:focus
+      font-weight: bold
+
+
+  h1
+    font-size: 2em
+    line-height: 1.5em
+    margin-bottom: 1em
+    word-break: break-word
+
+  h2
+    font-size: 1.8em
+    line-height: 1.5em
+    color: $color_blue
+    word-break: break-word
+
+  h3
+    font-size: 1.5em
+    line-height: 1.5em
+    word-break: break-word
+    color: $color_blue
+
+  h1, h2, h3, h4, h5, h6
+    margin-bottom: .8em
+    color: $color_blue
+    font-weight: bold
+
+
+  .scrollable
+    padding: 1em 0
+    width: 100%
+    overflow: hidden
+    position: relative
+
+    &:after
+      content: "Veuillez faire défiler vers la droite pour en voir plus   >>"
+      font-family: 'Work Sans', Arial, sans-serif
+      color: $color_white
+      background-color: $color_lightblue
+      position: absolute
+      z-index: 8
+      width: 100%
+      padding: .25em .5em
+      font-size: .6em
+      text-align: right !important
+      bottom: 0
+      left: 0
+
+      +mediaMinWidth(586px)
+        font-size: .8em
+
+    &-container
+      width: 100%
+      padding-bottom: 1.5em
+      position: relative
+      overflow-x: auto
+
+    table
+      min-width: 740px
+
+  blockquote
+    padding: 40px
+    background-color: $color_darkblue
+    border-radius: 8px
+    color: $color_white
+    font-size: 1.25em
+    display: block
+    margin: 2.5em 0
+
+    +mediaMaxWidth(768px)
+      font-size: 1em
+      margin: 1.5em 0
+
+    cite
+      font-size: .8em
+
+    p:last-child
+      margin-bottom: 0
+      padding-bottom: 0
+
+  *:not(.table-doublecolomne)
+    table
+      margin: 1em 0
+      min-width: 740px
+
+      th
+        background-color: $color_blue
+        color: $color_white
+
+      tr
+        &:last-child
+          td
+            border-bottom: 1px solid
+
+      td
+        padding: .5em
+        border-color: $color_blue
+        border-top: 1px solid
+        border-right: 1px solid
+
+        &:first-child
+          border-left: 1px solid
+
+
+      th
+        padding: .5em
+        border-right: 1px solid $color_white
+
+        &:last-child
+          border-right: 0
+
+      tr
+        &:nth-child(even)
+          background-color: #E5E5E5
+
+
+.modal_livre
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 8888
+  -webkit-backdrop-filter: blur(16px)
+  backdrop-filter: blur(16px)
+
+  &--dialog
+    max-width: 970px
+    margin: 5vh auto
+    text-align: center
+
+    img
+      display: inline-block
+      width: auto
+      max-width: 100%
+      height: auto
+      max-height: 90vh
+
+
+
+.modal_warning
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 8888
+  -webkit-backdrop-filter: blur(16px)
+  backdrop-filter: blur(16px)
+
+  &--dialog
+    max-width: 450px
+    margin: auto
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100vh
+
+  &--content
+    background-color: #fff
+    padding: 80px
+    border-radius: 20px
+    text-align: center
+    box-shadow: 0 6px 11px rgba(0, 0, 0, .24)
+
+    +mediaMaxWidth(768px)
+      padding: 40px
+    +mediaMaxWidth(550px)
+      padding: 40px 24px
+
+  &--title
+    color: #001965
+    font-size: 50px
+    line-height: 1.5em
+    font-weight: 400
+    width: 100%
+    margin-bottom: 24px
+
+    +mediaMaxWidth(880px)
+      font-size: 40px
+
+    +mediaMaxWidth(550px)
+      font-size: 35px
+
+  &--text
+    color: #001965
+    font-size: 20px
+    line-height: 1.5em
+    font-weight: 400
+    width: 100%
+    margin-bottom: 24px
+
+    +mediaMaxWidth(880px)
+      font-size: 18px
+
+    +mediaMaxWidth(550px)
+      font-size: 16px
+
+  &--link
+    text-align: center

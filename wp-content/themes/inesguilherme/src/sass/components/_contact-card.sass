@@ -1,0 +1,40 @@
+.contact
+  max-width: 670px
+  margin-bottom: 50px
+
+  &-wrapper
+    display: flex
+    align-items: center
+
+  &-image
+    img
+      width: 220px
+      height: 220px
+      border-radius: 50%
+      object-fit: cover
+
+  &-container
+    border-left: 8px solid $color_darkblue
+    padding: 10px 20px
+
+    &.avec_image
+      padding: 0 0 0 40px
+
+  &-title
+    font-size: 32px
+    line-height: 1.5em
+    padding-bottom: 8px
+    font-weight: 600
+
+    +mediaMaxWidth(550px)
+      font-size: 24px
+
+  &-content
+    font-size: 22px
+    line-height: 1.5em
+
+    +mediaMaxWidth(550px)
+      font-size: 14px
+
+    strong
+      color: $color_blue

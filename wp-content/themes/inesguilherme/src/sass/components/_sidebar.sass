@@ -1,0 +1,62 @@
+.sidebar
+  position: fixed
+  top: 0
+  left: 0
+  width: 250px
+  background-color: $color_blue
+  z-index: 8
+  height: 100vh
+  overflow: hidden
+
+  +mediaMaxWidth(1060px)
+    display: none
+
+  &-logo
+    padding: 25px
+
+    a
+      display: block
+
+    img
+      display: block
+      width: 100%
+      height: auto
+
+  .menu
+    list-style: none
+    padding: 0
+    &-sidebar-container
+      padding-top: 70px
+
+    &-item
+      text-align: right
+
+      &:not(:last-child)
+        padding-bottom: 25px
+
+      a
+        color: $color_white
+        padding: 0 25px
+        font-size: 18px
+        position: relative
+
+        &:after 
+          content: ''
+          position: absolute
+          z-index: 8
+          right: -5px
+          top: 50%
+          transform: translate(100%, -50%)
+          width: 26px
+          height: 11px
+          background-image: url('../img/sidebar/link_active.svg')
+          display: block
+          transition: .8s
+
+      &.current-menu-item
+        a
+          &:after
+            transform: translate(0, -50%)
+
+
+

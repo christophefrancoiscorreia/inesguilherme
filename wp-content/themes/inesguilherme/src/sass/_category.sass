@@ -1,0 +1,208 @@
+.category
+  &-container
+    padding: 75px 35px 75px 75px
+    position: relative
+    z-index: 8
+
+    +mediaMaxWidth(1060px)
+      padding: 75px 35px
+
+    +mediaMaxWidth(768px)
+      padding: 35px
+
+  &-title
+    color: $color_black
+    font-size: 68px
+    line-height: 1em
+    padding-bottom: 54px
+    margin: 0
+    font-weight: 600
+
+    +mediaMaxWidth(768px)
+      font-size: 50px
+
+    +mediaMaxWidth(768px)
+      font-size: 35px
+
+
+
+
+  &-filter
+    display: flex
+    align-items: center
+    width: 100%
+    flex-wrap: wrap
+    padding-bottom: 24px
+    margin-bottom: 24px
+    border-bottom: 1px solid #ddd
+
+    &--letters
+      width: calc(100% - 230px)
+
+      +mediaMaxWidth(550px)
+        width: 100%
+        padding-bottom: 35px
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+
+    .letters
+      &-item
+        width: 26px
+        height: 26px
+        display: inline-flex
+        align-items: center
+        justify-content: center
+        border-radius: 50%
+        background-color: #ddd
+        transition: .8s
+        cursor: pointer
+        margin-bottom: 14px
+        margin-right: 14px
+        border: none
+
+        +mediaMaxWidth(550px)
+          margin: 7px
+
+        &:hover
+          background-color: $color_darkblue
+          color: $color_white
+        &.active
+          width: 36px
+          height: 36px
+          background-color: $color_darkblue
+          color: $color_white
+
+    &--selectors
+      width: calc(100% - 230px)
+      display: flex
+      justify-content: flex-start
+
+      +mediaMaxWidth(550px)
+        width: 100%
+        padding-bottom: 35px
+
+    .themes
+      position: relative
+      z-index: 888
+
+      +mediaMaxWidth(550px)
+        width: 100%
+
+      &-opener
+        display: flex
+        align-items: center
+        border: 1px solid $color_black
+        color: $color_black
+        background-color: #EBEBEB
+        padding: .5em 1em
+        font-size: 18px
+        border-radius: 4px
+        cursor: pointer
+        width: 255px
+        justify-content: space-between 
+
+        +mediaMaxWidth(550px)
+          width: 100%
+
+        img
+          margin-left: 16px
+          width: 24px
+          height: 24px
+          object-fit: contain
+          position: relative
+
+        &.active
+          border-bottom-right-radius: 0
+          border-bottom-left-radius: 0
+
+          img
+            transform: rotate(180deg)
+
+      &-list
+        position: absolute
+        bottom: 0
+        transform: translateY(100%)
+        left: 0
+        background-color: #EBEBEB
+        border: 1px solid $color_black
+        border-top: 0
+        border-bottom-left-radius: 4px
+        border-bottom-right-radius: 4px
+        overflow: hidden
+
+      &-item
+        padding: .5em 1em
+        margin: 0
+        font-size: 18px
+        width: 100%
+        border: 0
+        text-align: left
+        cursor: pointer
+
+        &:not(:last-child)
+          border-bottom: 1px solid
+
+        &.active, &:hover
+          background-color: $color_blue
+          color: $color_white
+
+
+
+
+    &--search
+      width: 230px
+      display: flex
+      align-items: center
+      justify-content: flex-end
+
+      +mediaMaxWidth(550px)
+        width: 100%
+
+    .search
+      &-input
+        width: 100%
+        color: $color_darkblue
+        background-color: #f7f7f7
+        border: 1px solid $color_darkblue
+        border-radius: 4px
+        display: block
+        padding: 8px 16px
+        font-size: 16px
+        line-height: 1em
+        +placeholder
+          color: $color_darkblue
+
+      &-trigger
+        background-color: transparent
+        border: 0
+        padding: 0 8px
+
+
+  &-loader
+    padding-top: 80px
+    display: flex
+    justify-content: center
+
+  &-load_more
+    padding-top: 80px
+    display: flex
+    justify-content: center
+
+    button
+      max-width: 240px
+
+  &-post
+    padding-bottom: 80px
+    max-width: 988px
+    &--image
+      padding-bottom: 80px
+      img
+        width: 100%
+        object-fit: cover
+        max-height: 500px
+
+    &--title
+      font-size: 40px
+      font-weight: 600
+      margin-bottom: .5em

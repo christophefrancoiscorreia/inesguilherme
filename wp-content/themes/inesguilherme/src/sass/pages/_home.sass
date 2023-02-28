@@ -1,0 +1,50 @@
+.home
+  &-wrapper
+    height: 100vh
+    width: 100%
+    position: relative
+    z-index: 88
+
+  &-slide
+    height: 100%
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+
+    &.one
+      background-color: blue
+    &.two
+      background-color: red
+    &.three
+      background-color: yellow
+    &.four
+      background-color: pink
+    &.five
+      background-color: teal
+    &.six
+      background-color: grey
+
+  &-pagination
+    position: fixed
+    bottom: 0
+    z-index: 888
+    justify-content: center
+    display: flex
+    padding: 36px 24px
+    align-items: center
+
+    
+    .swiper-pagination
+      &-bullet
+        width: 8px
+        height: 8px
+        background-color: $color_white !important
+        transition: .8s
+        opacity: 1 !important
+        box-shadow: 0 0 4px rgba(0,0,0,.16)
+
+        &-active
+          width: 16px
+          height: 16px
+          box-shadow: 0 0 8px rgba(0,0,0,.16)
