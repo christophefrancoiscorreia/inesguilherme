@@ -13,18 +13,89 @@
     align-items: center
     text-align: center
 
+    *
+      color: $color_white
+
     &.one
       background-color: blue
+      background-position: center
+      background-size: conver
+      position: relative
+
+      &::before
+        content: ''
+        width: 50%
+        max-width: 550px
+        padding-bottom: 50%
+        height: 0
+        position: absolute
+        top: 0
+        right: 0
+        background-image: url(../img/home/canto-direito.png)
+        background-position: top right
+        background-repeat: no-repeat
+        background-size: contain
+        
+
+      &::after
+        content: ''
+        width: 50%
+        max-width: 550px
+        padding-bottom: 50% 
+        height: 0
+        position: absolute
+        bottom: 0
+        left: 0
+        background-image: url(../img/home/canto-esquerdo.png)
+        background-position: bottom left
+        background-repeat: no-repeat
+        background-size: contain
+        
+
+
+
+
+      h1
+        font-family: $font_meow
+        font-size: 50px
+        line-height: 1.5em
+        font-weight: 400
+        padding-bottom: 25px
+      
+      h2
+        font-family: $font_montserrat
+        line-height: 1.5em  
+        font-weight: 300
+        font-size: 20px
+        letter-spacing: 2px
+        padding-bottom: 25px
+      
+      h3
+        font-family: $font_montserrat
+        line-height: 1.5em  
+        font-weight: 300
+        font-size: 20px
+        letter-spacing: 2px
+
     &.two
       background-color: red
     &.three
-      background-color: yellow
+      background-color: black
     &.four
       background-color: pink
     &.five
       background-color: teal
     &.six
       background-color: grey
+    &.seven
+      background-color: grey
+
+
+    &--cta
+      padding: 24px 0
+      font-size: 13px
+
+
 
   &-pagination
     position: fixed

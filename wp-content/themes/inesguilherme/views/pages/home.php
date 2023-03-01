@@ -16,7 +16,17 @@ get_header(); ?>
 <div id="swiper" class="home-wrapper swiper-container">
     <div class="swiper-wrapper">
         <div class="swiper-slide">
-            <div class="home-slide one">                
+            <?php 
+            $bg_src = wp_get_attachment_image_src(18, "large", true)[0];
+ 
+            if (empty($bg_src)) {
+                $bg_src = wp_get_attachment_image_src(18, "full", true)[0];
+            }
+
+            if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false && file_exists(str_replace(home_url(), ABSPATH, $bg_src) . '.webp')) {
+                $bg_src = $bg_src . '.webp';
+            }?>
+            <div class="home-slide one" style="background-image: url(<?php echo esc_url($bg_src); ?>);">                
                 <div>
                     <h1>Inês & Guilherme</h1>
                     <h2>1 de Setembro de 2023</h2>
@@ -48,7 +58,7 @@ get_header(); ?>
                 <div>
                     <h2>A Cerimonia !</h2>
                     <h4>Capela de<br>Nossa Senhora do Parto</h4>
-                    <div>
+                    <div class="home-slide--cta">
                         <a href="<?php echo esc_url('https://maps.app.goo.gl/wZjCC751UaiL3inP9') ?>" class="cta" target="_blank">Aceder à Capela</a>
                     </div>
                 </div>
@@ -57,9 +67,9 @@ get_header(); ?>
         <div class="swiper-slide">
             <div class="home-slide five">
                 <div>
-                    <h2>O copo de agua !</h2>
+                    <h2>O copo de água !</h2>
                     <h3>Quinta Redolho de Cima</h3>
-                    <div>
+                    <div class="home-slide--cta">
                         <a href="<?php echo esc_url('https://maps.app.goo.gl/AdWWdsQqzrSi3yA36') ?>" class="cta" target="_blank">Aceder à Quinta</a>
                     </div>
                 </div>
@@ -69,14 +79,27 @@ get_header(); ?>
             <div class="home-slide six">
                 <div>
                     <h2>Informações</h2>
-                    <div>
-                        <a href="<?php echo esc_url(home_url().'/inscricoes') ?>" class="cta">Informa-nos da tua presença</a>
+                    <div class="home-slide--cta">
+                        <a href="<?php echo esc_url(home_url().'/inscricoes') ?>" class="cta">Confirma a tua presença</a>
                     </div>
-                    <div>
-                        <a href="<?php echo esc_url(home_url().'/contactos') ?>" class="cta">Contacta-nos para qualquer duvida</a>
+                    <div class="home-slide--cta">
+                        <a href="<?php echo esc_url(home_url().'/contactos') ?>" class="cta">Contacta-nos</a>
                     </div>
-                    <div>
+                    <div class="home-slide--cta">
                         <a href="<?php echo esc_url(home_url().'/donativos') ?>" class="cta">Donativos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide"> 
+            <div class="home-slide seven">
+                <div>
+                    <h2>Alojamentos</h2>
+                    <div class="home-slide--cta">
+                        <a href="<?php echo esc_url(home_url().'/hoteis') ?>" class="cta">Hoteis</a>
+                    </div>
+                    <div class="home-slide--cta">
+                        <a href="<?php echo esc_url(home_url().'/hostels') ?>" class="cta">Hostels</a>
                     </div>
                 </div>
             </div>

@@ -74,14 +74,14 @@ a {
     object-fit: contain; }
   .header-tools .nav_opener {
     display: block;
-    color: #001959; }
+    color: #001959;
+    padding: 24px; }
     .header-tools .nav_opener img {
       width: 24px;
       height: 24px;
       object-fit: contain; }
     .header-tools .nav_opener .open {
-      position: relative;
-      top: 7px; }
+      position: relative; }
     .header-tools .nav_opener .close {
       display: none; }
     .header-tools .nav_opener.active .open {
@@ -676,18 +676,73 @@ ul {
   justify-content: center;
   align-items: center;
   text-align: center; }
+  .home-slide * {
+    color: #FFF; }
   .home-slide.one {
-    background-color: blue; }
+    background-color: blue;
+    background-position: center;
+    background-size: conver;
+    position: relative; }
+    .home-slide.one::before {
+      content: '';
+      width: 50%;
+      max-width: 550px;
+      padding-bottom: 50%;
+      height: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url(../img/home/canto-direito.png);
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .home-slide.one::after {
+      content: '';
+      width: 50%;
+      max-width: 550px;
+      padding-bottom: 50%;
+      height: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-image: url(../img/home/canto-esquerdo.png);
+      background-position: bottom left;
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .home-slide.one h1 {
+      font-family: "Meow Script", serif;
+      font-size: 50px;
+      line-height: 1.5em;
+      font-weight: 400;
+      padding-bottom: 25px; }
+    .home-slide.one h2 {
+      font-family: "Montserrat", sans-serif;
+      line-height: 1.5em;
+      font-weight: 300;
+      font-size: 20px;
+      letter-spacing: 2px;
+      padding-bottom: 25px; }
+    .home-slide.one h3 {
+      font-family: "Montserrat", sans-serif;
+      line-height: 1.5em;
+      font-weight: 300;
+      font-size: 20px;
+      letter-spacing: 2px; }
   .home-slide.two {
     background-color: red; }
   .home-slide.three {
-    background-color: yellow; }
+    background-color: black; }
   .home-slide.four {
     background-color: pink; }
   .home-slide.five {
     background-color: teal; }
   .home-slide.six {
     background-color: grey; }
+  .home-slide.seven {
+    background-color: grey; }
+  .home-slide--cta {
+    padding: 24px 0;
+    font-size: 13px; }
 
 .home-pagination {
   position: fixed;
@@ -885,10 +940,10 @@ ul {
     height: auto; }
 
 .cta {
-  color: #FFF;
-  background-color: #254FBC;
+  color: #000;
+  background-color: #FFF;
   border-style: solid;
-  border-color: #254FBC;
+  border-color: #FFF;
   border-radius: 3em;
   border-width: 1px;
   padding: 1em 2em;
