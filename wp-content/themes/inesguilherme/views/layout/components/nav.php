@@ -18,9 +18,11 @@
 <header class="header" role="banner" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
     <div class="header-navigation">
         <div class="header-home">
+            <?php if(!is_home()){ ?>
             <a href="<?php echo esc_url(home_url()); ?>">
                 <img src="<?php echo esc_url(folder_img_url().'header/home.svg'); ?>" alt="">
             </a>
+            <?php } ?>
         </div> 
         <div class="header-tools"> 
             <a href="<?php echo esc_url('#'); ?>" class="nav_opener">

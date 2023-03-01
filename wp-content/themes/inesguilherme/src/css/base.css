@@ -674,7 +674,8 @@ ul {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
   .home-slide.one {
     background-color: blue; }
   .home-slide.two {
