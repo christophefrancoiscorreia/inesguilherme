@@ -3,14 +3,12 @@ jQuery(function ($) {
 
     var swiper = new Swiper("#swiper", {
         loop: true,
-        speed: 2000,
-        /*autoplay: {
-            delay: 8000
-        },*/
+        speed: 500,
+        allowTouchScreen: true,
         pagination: {
           el: ".home-pagination",
           clickable: true,
         },
-    }); 
- 
+    });  
+  
 }); 

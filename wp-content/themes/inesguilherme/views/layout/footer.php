@@ -16,7 +16,6 @@
 </main>
 <?php
 
-include ('components/foot.php');
 wp_footer(); ?>
 
 <!-- JSON - SEO TEST YOUR WEBSITE ON https://search.google.com/structured-data/testing-tool-->

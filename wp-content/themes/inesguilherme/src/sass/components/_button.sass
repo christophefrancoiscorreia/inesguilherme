@@ -5,53 +5,39 @@
   border-color: $color_white
   border-radius: 3em
   border-width: 1px
-  padding: 1em 2em
+  padding: 1em 1.5em
   line-height: 1em
   font-size: 1em
   transition: .25s
   cursor: pointer
- 
+  display: inline-flex
+  align-items: center
+
+  *
+    color: inherit
+
+  img
+    display: block
+    width: 1em
+    object-fit: contain
+    height: 1em
+    margin-right: 0.8em
+
   &:hover
     border-color: $color_darkblue
     background-color: $color_darkblue
-
-  &-secondary
     color: $color_white
-    background-color: $color_darkblue
-    border-style: solid
-    border-color: $color_darkblue
-    border-radius: 3em
-    border-width: 1px
-    padding: 1em 2em
-    line-height: 1.5em
-    font-size: 1em
-    transition: .25s
-    cursor: pointer
 
-    &:hover
-      border-color: $color_blue
-      background-color: $color_blue
-
-.cta_social
-  color: inherit
-  background-color: transparent
+.underline
+  color: $color_white
   border-style: solid
-  border-color: inherit
-  border-radius: 40px
-  border-width: 1px
-  padding: 0
-  width: 40px
-  height: 40px
-  display: inline-flex
-  font-size: 18px
+  border-bottom: 1px solid
+  padding: .25em 0
+  line-height: 1.5em
+  font-size: 1em
   transition: .25s
-  position: relative
+  cursor: pointer
 
-  i, img
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
 
 #back_top
   position: fixed

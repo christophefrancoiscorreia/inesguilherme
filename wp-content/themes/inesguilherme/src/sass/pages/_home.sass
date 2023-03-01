@@ -11,7 +11,7 @@
     display: flex
     justify-content: center
     align-items: center
-    text-align: center
+    text-align: center 
 
     *
       color: $color_white
@@ -52,9 +52,6 @@
         background-size: contain
         
 
-
-
-
       h1
         font-family: $font_meow
         font-size: 50px
@@ -63,33 +60,138 @@
         padding-bottom: 25px
       
       h2
-        font-family: $font_montserrat
         line-height: 1.5em  
         font-weight: 300
         font-size: 20px
         letter-spacing: 2px
         padding-bottom: 25px
+        text-transform: uppercase
       
       h3
-        font-family: $font_montserrat
         line-height: 1.5em  
         font-weight: 300
         font-size: 20px
         letter-spacing: 2px
+        text-transform: uppercase
 
     &.two
       background-color: red
-    &.three
+      background-image: url(../img/home/comeon.gif)
+      background-size: cover
+      background-position: center
+
+      &::after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0,.24)
+        z-index: 8
+
+
+    &.three 
       background-color: black
+      background-image: url(../img/home/treino.gif)
+      background-size: cover
+      background-position: center
+
+      h2
+        padding-bottom: 25px
+        font-size: 56px
+        letter-spacing: 3px
+        text-transform: uppercase
+
+
     &.four
       background-color: pink
+      background-image: url(../img/home/capela.jpg)
+      background-size: cover
+      background-position: center
+
+      &::after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0,.24) 
+        z-index: 8
+
+      h2
+        padding-bottom: 25px 
+        font-size: 40px
+        letter-spacing: 3px
+        text-transform: uppercase
+        text-shadow: 0 0 .25em rgba(0,0,0,.5)
+
+      h3
+        font-size: 25px
+        letter-spacing: 3px
+        padding-bottom: 24px
+        font-weight: 300
+        text-shadow: 0 0 .25em rgba(0,0,0,.5)
+        text-transform: uppercase
+
     &.five
       background-color: teal
+ 
+      &::after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0,.24) 
+        z-index: 8
+
+      h2
+        padding-bottom: 25px 
+        font-size: 40px
+        letter-spacing: 3px
+        text-transform: uppercase
+        text-shadow: 0 0 .25em rgba(0,0,0,.5)
+
+      h3
+        font-size: 25px
+        letter-spacing: 3px
+        font-weight: 300
+        padding-bottom: 24px
+        text-shadow: 0 0 .25em rgba(0,0,0,.5)
+        text-transform: uppercase
+
     &.six
       background-color: grey
-    &.seven
-      background-color: grey
 
+      h2
+        padding-bottom: 25px 
+        font-size: 40px
+        letter-spacing: 3px
+        text-transform: uppercase
+        text-shadow: 0 0 .25em rgba(0,0,0,.5)
+
+    &.seven
+      background-color: black
+
+      h2
+        padding-bottom: 25px 
+        font-size: 40px
+        letter-spacing: 3px
+        text-transform: uppercase
+        text-shadow: 0 0 .25em rgba(0,0,0,.5)
+
+    &--wrapper
+      padding: 24px
+      position: relative
+      z-index: 88
+
+      p        
+        text-transform: uppercase
+        font-size: 16px
+        line-height: 2em
 
     &--cta
       padding: 24px 0

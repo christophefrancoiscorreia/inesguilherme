@@ -23,9 +23,6 @@ get_header(); ?>
                 <h1 class="page-title entry-title"><?php echo esc_html($title) ?></h1>
             </header>
             <div class="page-content entry-content"><?php echo $content; ?></div>
-            <div class="page-prendre_contact">
-                <?php echo do_shortcode('[gravityform id="1" title="true" description="false" ajax="true" tabindex="49"]'); ?>
-            </div>
         </article>
     </div>
 </main>
