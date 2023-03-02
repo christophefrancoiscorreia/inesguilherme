@@ -60,12 +60,12 @@ get_header(); ?>
                     <h3>Capela de<br>Nossa Senhora do Parto</h3>
                     <div class="home-slide--cta">
                         <a href="<?php echo esc_url('https://maps.app.goo.gl/wZjCC751UaiL3inP9') ?>" class="cta" target="_blank" rel="noreferrer noopener">
-                            <img src="<?php echo esc_url(folder_img_url().'home/Google.svg'); ?>" alt="">
+                            <img src="<?php echo esc_url(folder_img_url().'home/Google_Maps_icon_(2020).svg'); ?>" alt="">
                             <span>Aceder à Capela</span>
                         </a>
                     </div>
                     <div class="home-slide--cta">
-                        <a href="<?php echo esc_url('https://www.quintaredolhodecima.com/') ?>" class="underline" target="_blank" rel="noreferrer noopener">Sobre a capela</a>
+                        <a href="<?php echo esc_url('https://www.guiadacidade.pt/pt/poi-igreja-de-nossa-senhora-do-parto-284963') ?>" class="underline" target="_blank" rel="noreferrer noopener">Sobre a capela</a>
                     </div>
                 </div>
             </div>
@@ -77,12 +77,12 @@ get_header(); ?>
                     <h3>Quinta Redolho de Cima</h3>
                     <div class="home-slide--cta">
                         <a href="<?php echo esc_url('https://maps.app.goo.gl/AdWWdsQqzrSi3yA36') ?>" class="cta" target="_blank">
-                            <img src="<?php echo esc_url(folder_img_url().'home/Google.svg'); ?>" alt="">
+                            <img src="<?php echo esc_url(folder_img_url().'home/Google_Maps_icon_(2020).svg'); ?>" alt="">
                             <span>Aceder à Quinta</span>
                         </a>
                     </div>
                     <div class="home-slide--cta">
-                        <a href="<?php echo esc_url('https://www.guiadacidade.pt/pt/poi-igreja-de-nossa-senhora-do-parto-284963') ?>" class="underline" target="_blank">Sobre a quinta</a>
+                        <a href="<?php echo esc_url('https://www.quintaredolhodecima.com/') ?>" class="underline" target="_blank">Sobre a quinta</a>
                     </div>
                 </div>
             </div>
@@ -108,12 +108,12 @@ get_header(); ?>
                 <div class="home-slide--wrapper">
                     <h2>Alojamentos</h2>
                     <div class="home-slide--cta">
-                        <a href="<?php echo esc_url(home_url().'/hoteis') ?>" class="cta">Hoteis</a>
+                        <a href="<?php echo esc_url('https://www.booking.com/searchresults.fr.html?ss=Lousada%2C+R%C3%A9gion+Nord%2C+Portugal&efdco=1&label=gen173nr-1BCAEoggI46AdIM1gEaE2IAQGYAQ24ARfIAQzYAQHoAQGIAgGoAgO4ArSMhKAGwAIB0gIkZGM4NWQwZWEtODM2ZC00NDJjLTlhZjctY2NlZTk5OWM3MWU02AIF4AIB&sid=98e6b8950c53d2e5bb56114c5ee842be&aid=304142&lang=fr&sb=1&src_elem=sb&src=index&dest_id=-2168234&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=fr&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=89eb8f9a2129013a&ac_meta=GhA4OWViOGY5YTIxMjkwMTNhIAAoATICZnI6B0xvdXNhZGFAAEoAUAA%3D&checkin=2023-09-01&checkout=2023-09-02&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure') ?>" target="_blank" rel="noopener noreferrer" class="cta">Hoteis Lousada</a>
                     </div>
                     <div class="home-slide--cta">
-                        <a href="<?php echo esc_url(home_url().'/hostels') ?>" class="cta">Hostels</a>
+                        <a href="<?php echo esc_url('https://www.booking.com/searchresults.fr.html?ss=Braga%2C+R%C3%A9gion+Nord%2C+Portugal&ssne=Lousada&ssne_untouched=Lousada&label=gen173nr-1BCAEoggI46AdIM1gEaE2IAQGYAQ24ARfIAQzYAQHoAQGIAgGoAgO4ArSMhKAGwAIB0gIkZGM4NWQwZWEtODM2ZC00NDJjLTlhZjctY2NlZTk5OWM3MWU02AIF4AIB&sid=98e6b8950c53d2e5bb56114c5ee842be&aid=304142&lang=fr&sb=1&src_elem=sb&src=searchresults&dest_id=-2160205&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=fr&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=8bf38fa707230047&ac_meta=GhA4YmYzOGZhNzA3MjMwMDQ3IAAoATICZnI6BUJyYWdhQABKAFAA&checkin=2023-09-01&checkout=2023-09-02&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure') ?>" target="_blank" rel="noopener noreferrer" class="cta">Hoteis Braga</a>
                     </div>
-                </div>
+                </div> 
             </div>
         </div>
     </div>

@@ -124,6 +124,14 @@ a {
       .header .menu-item:hover > a, .header .menu-item.current-menu-item > a {
         background-color: #fff;
         color: #111; }
+  .header .credits {
+    color: white;
+    text-align: center;
+    bottom: 0;
+    padding: 24px;
+    line-height: 2em;
+    margin-top: 24px;
+    border-top: 1px solid; }
 
 .footer {
   background-color: rgba(0, 0, 0, 0.45);
@@ -667,32 +675,6 @@ ul {
     background-position: center;
     background-size: conver;
     position: relative; }
-    .home-slide.one::before {
-      content: '';
-      width: 50%;
-      max-width: 550px;
-      padding-bottom: 50%;
-      height: 0;
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-image: url(../img/home/canto-direito.png);
-      background-position: top right;
-      background-repeat: no-repeat;
-      background-size: contain; }
-    .home-slide.one::after {
-      content: '';
-      width: 50%;
-      max-width: 550px;
-      padding-bottom: 50%;
-      height: 0;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background-image: url(../img/home/canto-esquerdo.png);
-      background-position: bottom left;
-      background-repeat: no-repeat;
-      background-size: contain; }
     .home-slide.one h1 {
       font-family: "Meow Script", serif;
       font-size: 50px;
@@ -764,7 +746,10 @@ ul {
       text-shadow: 0 0 0.25em rgba(0, 0, 0, 0.5);
       text-transform: uppercase; }
   .home-slide.five {
-    background-color: teal; }
+    background-color: teal;
+    background-image: url(../img/home/champagne3.gif);
+    background-size: cover;
+    background-position: center; }
     .home-slide.five::after {
       content: '';
       position: absolute;
@@ -788,7 +773,10 @@ ul {
       text-shadow: 0 0 0.25em rgba(0, 0, 0, 0.5);
       text-transform: uppercase; }
   .home-slide.six {
-    background-color: grey; }
+    background-color: grey;
+    background-image: url(../img/home/callcenter.gif);
+    background-size: cover;
+    background-position: center; }
     .home-slide.six h2 {
       padding-bottom: 25px;
       font-size: 40px;
@@ -796,7 +784,10 @@ ul {
       text-transform: uppercase;
       text-shadow: 0 0 0.25em rgba(0, 0, 0, 0.5); }
   .home-slide.seven {
-    background-color: black; }
+    background-color: black;
+    background-image: url(../img/home/sleeping.gif);
+    background-size: cover;
+    background-position: center; }
     .home-slide.seven h2 {
       padding-bottom: 25px;
       font-size: 40px;
