@@ -747,7 +747,7 @@ ul {
       text-transform: uppercase; }
   .home-slide.five {
     background-color: teal;
-    background-image: url(../img/home/champagne3.gif);
+    background-image: url(../img/home/champagne.gif);
     background-size: cover;
     background-position: center; }
     .home-slide.five::after {
