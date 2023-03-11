@@ -14,7 +14,10 @@
 
  ?>
 </main>
-<?php
+<?php 
+if(!is_page(12)){
+	include('components/popup_confirm.php');  
+}
 
 wp_footer(); ?>
 

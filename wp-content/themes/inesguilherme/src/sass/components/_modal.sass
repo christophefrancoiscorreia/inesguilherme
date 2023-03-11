@@ -1,0 +1,43 @@
+.modal
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0,.8)
+    z-index: 888
+
+    &-close
+        position: absolute
+        top: 15px
+        right: 15px 
+        width: 30px
+        height: 30px
+        object-fit: contain
+        background-color: transparent
+        border: 0
+        z-index: 88
+        padding: 0
+
+    &-dialog
+        max-width: 800px
+        width: 90%
+        margin: 50px auto
+
+    &-content
+        background-color: #fff
+        padding: 40px
+        
+
+.message_block
+    &-title
+        font-size: 18px
+        font-weight: 400
+        text-align: center
+        line-height: 1.5em
+
+    &-cta
+        padding-top: 40px
+        font-size: 14px
+        text-align: center
+
