@@ -28,6 +28,35 @@
     background-color: $color_darkblue
     color: $color_white
 
+.cta-blue
+  color: $color_white
+  background-color: $color_darkblue
+  border-style: solid
+  border-color: $color_darkblue
+  border-radius: 3em
+  border-width: 1px
+  padding: 1em 1.5em
+  line-height: 1em
+  font-size: 1em
+  transition: .25s
+  cursor: pointer
+  display: inline-flex
+  align-items: center
+
+  *
+    color: inherit
+
+  img
+    display: block
+    width: 1em
+    object-fit: contain
+    height: 1em
+    margin-right: 0.8em
+
+  &:hover
+    border-color: $color_blue
+    background-color: $color_blue
+
 .underline
   color: $color_white
   border-style: solid
