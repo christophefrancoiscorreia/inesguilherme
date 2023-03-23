@@ -30,6 +30,6 @@
             'theme_location' => 'primary'
         ]); ?> 
 
-        <div class="credits">Developed with love by <a href="<?php echo esc_url('https://github.com/christophefrancoiscorreia'); ?>">Christophe Correia</a></div>
+        <div class="credits">Powered by <a href="<?php echo esc_url('https://github.com/christophefrancoiscorreia'); ?>" target="_blank" rel="noopener noreferrer"><u>Christophe Correia</u></a></div>
     </nav>
 </header>

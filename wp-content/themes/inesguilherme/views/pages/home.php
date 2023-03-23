@@ -17,10 +17,10 @@ get_header(); ?>
     <div class="swiper-wrapper">
         <div class="swiper-slide">
             <?php 
-            $bg_src = wp_get_attachment_image_src(18, "large", true)[0];
+            $bg_src = wp_get_attachment_image_src(54, "large", true)[0];
  
             if (empty($bg_src)) {
-                $bg_src = wp_get_attachment_image_src(18, "full", true)[0];
+                $bg_src = wp_get_attachment_image_src(54, "full", true)[0];
             }
 
             if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false && file_exists(str_replace(home_url(), ABSPATH, $bg_src) . '.webp')) {
@@ -28,19 +28,19 @@ get_header(); ?>
             }?>
             <div class="home-slide one" style="background-image: url(<?php echo esc_url($bg_src); ?>);">                
                 <div class="home-slide--wrapper">
-                    <h1>Inês & Guilherme</h1>
+                    <h1>Inês & <br>Guilherme</h1>
                     <h2>1 de Setembro de 2023</h2>
                     <h3>Entre Braga e Lousada</h3>
                 </div>
-            </div>
+            </div> 
         </div>
         <div class="swiper-slide">
             <div class="home-slide two">
                 <div class="home-slide--wrapper">
-                    <p>Sim! Vamos casar!<br>
+                    <p><strong>Sim! Vamos casar!<br>
                         E sim, estás convidado!<br>
                         E não, a Inês não está grávida...<br><br>
-                        Só queremos mesmo celebrar o nosso amor, e comemorar este dia especial contigo!                    
+                        Só queremos mesmo celebrar o nosso amor, e comemorar este dia especial contigo!</strong>                  
                     </p>
                 </div>
             </div>
@@ -49,9 +49,9 @@ get_header(); ?>
             <div class="home-slide three">
                 <div class="home-slide--wrapper">
                     <h2><strong>PS:</strong></h2>
-                    <p>Não te esqueças de fazer um treininho antecipado,<br>porque nós também não!</p>
+                    <p><strong>Não te esqueças de fazer um treininho antecipado,<br>porque nós também não!</strong></p>
                 </div>
-            </div>
+            </div> 
         </div>  
         <div class="swiper-slide"> 
             <div class="home-slide four">
@@ -90,15 +90,15 @@ get_header(); ?>
         <div class="swiper-slide"> 
             <div class="home-slide six">
                 <div class="home-slide--wrapper">
-                    <h2>Informações</h2>
+                    <h2>Informações</h2>  
+                    <div class="texto">
+                        <span>Agradecemos confirmação até dia 30 de Junho 2023 !</span>
+                    </div>
                     <div class="home-slide--cta">
                         <a href="<?php echo esc_url(get_permalink(12)) ?>" class="cta">Confirma a tua presença</a>
                     </div>
                     <div class="home-slide--cta">
                         <a href="<?php echo esc_url(get_permalink(8)) ?>" class="cta">Como nos contactar</a>
-                    </div>
-                    <div class="home-slide--cta">
-                        <a href="<?php echo esc_url(get_permalink(10)) ?>" class="cta">Ajuda-nos com Donativos</a>
                     </div>
                 </div>
             </div>
@@ -108,12 +108,26 @@ get_header(); ?>
                 <div class="home-slide--wrapper">
                     <h2>Alojamentos</h2>
                     <div class="home-slide--cta">
-                        <a href="<?php echo esc_url('https://www.booking.com/searchresults.fr.html?ss=Lousada%2C+R%C3%A9gion+Nord%2C+Portugal&efdco=1&label=gen173nr-1BCAEoggI46AdIM1gEaE2IAQGYAQ24ARfIAQzYAQHoAQGIAgGoAgO4ArSMhKAGwAIB0gIkZGM4NWQwZWEtODM2ZC00NDJjLTlhZjctY2NlZTk5OWM3MWU02AIF4AIB&sid=98e6b8950c53d2e5bb56114c5ee842be&aid=304142&lang=fr&sb=1&src_elem=sb&src=index&dest_id=-2168234&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=fr&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=89eb8f9a2129013a&ac_meta=GhA4OWViOGY5YTIxMjkwMTNhIAAoATICZnI6B0xvdXNhZGFAAEoAUAA%3D&checkin=2023-09-01&checkout=2023-09-02&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure') ?>" target="_blank" rel="noopener noreferrer" class="cta">Hoteis Lousada</a>
+                        <a href="<?php echo esc_url('https://www.booking.com/searchresults.fr.html?ss=Lousada%2C+R%C3%A9gion+Nord%2C+Portugal&efdco=1&label=gen173nr-1BCAEoggI46AdIM1gEaE2IAQGYAQ24ARfIAQzYAQHoAQGIAgGoAgO4ArSMhKAGwAIB0gIkZGM4NWQwZWEtODM2ZC00NDJjLTlhZjctY2NlZTk5OWM3MWU02AIF4AIB&sid=98e6b8950c53d2e5bb56114c5ee842be&aid=304142&lang=fr&sb=1&src_elem=sb&src=index&dest_id=-2168234&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=fr&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=89eb8f9a2129013a&ac_meta=GhA4OWViOGY5YTIxMjkwMTNhIAAoATICZnI6B0xvdXNhZGFAAEoAUAA%3D&checkin=2023-09-01&checkout=2023-09-02&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure') ?>" target="_blank" rel="noopener noreferrer" class="cta">Hotéis Lousada</a>
                     </div>
                     <div class="home-slide--cta">
-                        <a href="<?php echo esc_url('https://www.booking.com/searchresults.fr.html?ss=Braga%2C+R%C3%A9gion+Nord%2C+Portugal&ssne=Lousada&ssne_untouched=Lousada&label=gen173nr-1BCAEoggI46AdIM1gEaE2IAQGYAQ24ARfIAQzYAQHoAQGIAgGoAgO4ArSMhKAGwAIB0gIkZGM4NWQwZWEtODM2ZC00NDJjLTlhZjctY2NlZTk5OWM3MWU02AIF4AIB&sid=98e6b8950c53d2e5bb56114c5ee842be&aid=304142&lang=fr&sb=1&src_elem=sb&src=searchresults&dest_id=-2160205&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=fr&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=8bf38fa707230047&ac_meta=GhA4YmYzOGZhNzA3MjMwMDQ3IAAoATICZnI6BUJyYWdhQABKAFAA&checkin=2023-09-01&checkout=2023-09-02&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure') ?>" target="_blank" rel="noopener noreferrer" class="cta">Hoteis Braga</a>
+                        <a href="<?php echo esc_url('https://www.booking.com/searchresults.fr.html?ss=Braga%2C+R%C3%A9gion+Nord%2C+Portugal&ssne=Lousada&ssne_untouched=Lousada&label=gen173nr-1BCAEoggI46AdIM1gEaE2IAQGYAQ24ARfIAQzYAQHoAQGIAgGoAgO4ArSMhKAGwAIB0gIkZGM4NWQwZWEtODM2ZC00NDJjLTlhZjctY2NlZTk5OWM3MWU02AIF4AIB&sid=98e6b8950c53d2e5bb56114c5ee842be&aid=304142&lang=fr&sb=1&src_elem=sb&src=searchresults&dest_id=-2160205&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=fr&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=8bf38fa707230047&ac_meta=GhA4YmYzOGZhNzA3MjMwMDQ3IAAoATICZnI6BUJyYWdhQABKAFAA&checkin=2023-09-01&checkout=2023-09-02&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure') ?>" target="_blank" rel="noopener noreferrer" class="cta">Hotéis Braga</a>
                     </div>
                 </div> 
+            </div>
+        </div>        
+        <div class="swiper-slide"> 
+            <div class="home-slide eight">
+                <div class="home-slide--wrapper">
+                    <h2>Patrocínios</h2>  
+                    <div class="texto" >
+                        E só assim como quem não quer a coisa...<br>
+                        <strong><em>"Se quiseres ajudar a gente aceita!"</em></strong>
+                    </div>
+                    <div class="home-slide--cta">
+                        <a href="<?php echo esc_url(get_permalink(10)) ?>" class="cta">Ajuda-nos aqui !</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
