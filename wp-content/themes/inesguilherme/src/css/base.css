@@ -705,6 +705,19 @@ ul {
     background-image: url(../img/home/ineedyou.gif);
     background-size: cover;
     background-position: center; }
+    .home-slide.two h2 {
+      padding-bottom: 25px;
+      font-size: 30px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-top: -40px; }
+    .home-slide.two h3 {
+      padding-bottom: 25px;
+      font-size: 20px;
+      letter-spacing: 3px;
+      text-transform: uppercase; }
+    .home-slide.two p {
+      margin-bottom: 1em; }
     .home-slide.two::after {
       content: '';
       position: absolute;
@@ -821,11 +834,14 @@ ul {
     background-position: center;
     position: relative; }
     .home-slide.eight h2 {
-      padding-bottom: 25px;
       font-size: 40px;
       letter-spacing: 3px;
       text-transform: uppercase;
       text-shadow: 0 0 0.25em rgba(0, 0, 0, 0.5); }
+    .home-slide.eight h3 {
+      padding-bottom: 25px;
+      letter-spacing: 3px;
+      font-size: 20px; }
     .home-slide.eight .texto {
       font-size: 16px;
       line-height: 2em;

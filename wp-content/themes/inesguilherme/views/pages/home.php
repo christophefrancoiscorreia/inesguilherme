@@ -37,11 +37,10 @@ get_header(); ?>
         <div class="swiper-slide">
             <div class="home-slide two">
                 <div class="home-slide--wrapper">
-                    <p><strong>Sim! Vamos casar!<br>
-                        E sim, estás convidado!<br>
-                        E não, a Inês não está grávida...<br><br>
-                        Só queremos mesmo celebrar o nosso amor, e comemorar este dia especial contigo!</strong>                  
-                    </p>
+                    <h2>Sim!<br>Vamos casar!</h2>
+                    <h3>E sim, estás convidado!</h3>
+                    <p><strong>E não, a Inês não está grávida...</strong></p>
+                    <p><strong>Só queremos mesmo celebrar o nosso amor, e comemorar este dia especial contigo!</strong></p>
                 </div>
             </div>
         </div>
@@ -57,7 +56,7 @@ get_header(); ?>
             <div class="home-slide four">
                 <div class="home-slide--wrapper">
                     <h2>A Cerimónia!</h2>
-                    <h3>Capela de<br>Nossa Senhora do Parto</h3>
+                    <h3>Capela de<br>Nossa Senhora do Parto<br><br><span style="font-size:.8em">Por volta das 13h00</span></h3>
                     <div class="home-slide--cta">
                         <a href="<?php echo esc_url('https://maps.app.goo.gl/wZjCC751UaiL3inP9') ?>" class="cta" target="_blank" rel="noreferrer noopener">
                             <img src="<?php echo esc_url(folder_img_url().'home/Google_Maps_icon_(2020).svg'); ?>" alt="">
@@ -74,7 +73,7 @@ get_header(); ?>
             <div class="home-slide five">
                 <div class="home-slide--wrapper">
                     <h2>O copo de água!</h2>
-                    <h3>Quinta Redolho de Cima</h3>
+                    <h3>Quinta Redolho de Cima<br><br><span style="font-size:.8em">Por volta das 15h30</span></h3>
                     <div class="home-slide--cta">
                         <a href="<?php echo esc_url('https://maps.app.goo.gl/AdWWdsQqzrSi3yA36') ?>" class="cta" target="_blank">
                             <img src="<?php echo esc_url(folder_img_url().'home/Google_Maps_icon_(2020).svg'); ?>" alt="">
@@ -120,6 +119,7 @@ get_header(); ?>
             <div class="home-slide eight">
                 <div class="home-slide--wrapper">
                     <h2>Patrocínios</h2>  
+                    <h3>para a nossa vida a dois</h3>  
                     <div class="texto" >
                         E só assim como quem não quer a coisa...<br>
                         <strong><em>"Se quiseres ajudar a gente aceita!"</em></strong>
