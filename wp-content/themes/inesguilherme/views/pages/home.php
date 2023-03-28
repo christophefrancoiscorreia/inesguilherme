@@ -56,7 +56,7 @@ get_header(); ?>
             <div class="home-slide four">
                 <div class="home-slide--wrapper">
                     <h2>A Cerimónia!</h2>
-                    <h3>Capela de<br>Nossa Senhora do Parto<br><br><span style="font-size:.8em">Por volta das 13h00</span></h3>
+                    <h3>Capela de<br>Nossa Senhora do Parto</h3>
                     <div class="home-slide--cta">
                         <a href="<?php echo esc_url('https://maps.app.goo.gl/wZjCC751UaiL3inP9') ?>" class="cta" target="_blank" rel="noreferrer noopener">
                             <img src="<?php echo esc_url(folder_img_url().'home/Google_Maps_icon_(2020).svg'); ?>" alt="">
@@ -66,6 +66,7 @@ get_header(); ?>
                     <div class="home-slide--cta">
                         <a href="<?php echo esc_url('https://www.guiadacidade.pt/pt/poi-igreja-de-nossa-senhora-do-parto-284963') ?>" class="underline" target="_blank" rel="noreferrer noopener">Sobre a capela</a>
                     </div>
+                    <p>Pelas 13h00</p>
                 </div>
             </div>
         </div>
@@ -73,7 +74,7 @@ get_header(); ?>
             <div class="home-slide five">
                 <div class="home-slide--wrapper">
                     <h2>O copo de água!</h2>
-                    <h3>Quinta Redolho de Cima<br><br><span style="font-size:.8em">Por volta das 15h30</span></h3>
+                    <h3>Quinta Redolho de Cima</h3>
                     <div class="home-slide--cta">
                         <a href="<?php echo esc_url('https://maps.app.goo.gl/AdWWdsQqzrSi3yA36') ?>" class="cta" target="_blank">
                             <img src="<?php echo esc_url(folder_img_url().'home/Google_Maps_icon_(2020).svg'); ?>" alt="">
