@@ -100,6 +100,9 @@ get_header(); ?>
                     <div class="home-slide--cta">
                         <a href="<?php echo esc_url(get_permalink(8)) ?>" class="cta">Como nos contactar</a>
                     </div>
+                    <div class="home-slide--cta">
+                        <a href="<?php echo esc_url(get_permalink(10)) ?>" class="cta">A nossa vida a dois!</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -115,22 +118,7 @@ get_header(); ?>
                     </div>
                 </div> 
             </div>
-        </div>        
-        <div class="swiper-slide"> 
-            <div class="home-slide eight">
-                <div class="home-slide--wrapper">
-                    <h2>Patrocínios</h2>  
-                    <h3>para a nossa vida a dois</h3>  
-                    <div class="texto" >
-                        E só assim como quem não quer a coisa...<br>
-                        <strong><em>"Se quiseres ajudar a gente aceita!"</em></strong>
-                    </div>
-                    <div class="home-slide--cta">
-                        <a href="<?php echo esc_url(get_permalink(10)) ?>" class="cta">Ajuda-nos aqui !</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div>     
     </div>
     <div class="home-pagination"></div>
 </div>
