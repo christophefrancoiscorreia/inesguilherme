@@ -7,9 +7,6 @@ jQuery(function($){
         param = self.attr('data-copy'),
         brRegex = /<br\s*[\/]?>/gi; 
 
-        console.log(param) 
-
-        
         navigator.clipboard.writeText(param.replace(brRegex, "\r\n")).then(
             function(){
                 //alert("yeah!"); // success 
