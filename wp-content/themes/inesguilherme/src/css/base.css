@@ -870,7 +870,8 @@ ul {
   background-image: url(../img/home/office.gif);
   background-size: cover;
   background-position: center;
-  position: relative; }
+  position: relative;
+  background-attachment: fixed; }
   .patrocinios::after {
     content: '';
     position: absolute;
@@ -881,14 +882,14 @@ ul {
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 8; }
   .patrocinios-wrapper {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center; }
   .patrocinios-content {
-    padding: 24px;
+    padding: 40px 24px;
     position: relative;
     z-index: 88;
     width: 100%; }
@@ -916,9 +917,9 @@ ul {
       text-align: left;
       color: #111;
       max-width: 400px;
-      width: 80%;
       margin: auto;
-      border-radius: 16px; }
+      border-radius: 16px;
+      font-size: 12px; }
       .patrocinios-content .iban [data-copy] {
         cursor: pointer; }
         .patrocinios-content .iban [data-copy]:first-child {
@@ -926,7 +927,8 @@ ul {
         .patrocinios-content .iban [data-copy] .title {
           display: flex;
           align-items: center;
-          margin-bottom: 0.5em; }
+          margin-bottom: 0.5em;
+          font-size: 16px; }
           .patrocinios-content .iban [data-copy] .title svg {
             margin-right: 0.5em; }
           .patrocinios-content .iban [data-copy] .title.copied::after {
@@ -947,6 +949,31 @@ ul {
             font-size: 12px;
             margin-left: 20px;
             border-radius: 2px; }
+      .patrocinios-content .iban .gform_wrapper {
+        padding-top: 20px;
+        margin-top: 20px;
+        border-top: 1px solid #eee; }
+        .patrocinios-content .iban .gform_wrapper .gform_footer {
+          font-size: 12px;
+          display: flex;
+          justify-content: center; }
+          .patrocinios-content .iban .gform_wrapper .gform_footer input {
+            color: #fff;
+            background-color: #001959;
+            border-style: solid;
+            border-color: #001959;
+            border-radius: 3em;
+            border-width: 1px;
+            padding: 1em 1.5em;
+            line-height: 1em;
+            font-size: 1em;
+            transition: .25s;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            text-transform: uppercase; }
+        .patrocinios-content .iban .gform_wrapper .gform_title {
+          color: #000; }
 
 .error--main {
   position: relative;
@@ -1060,6 +1087,9 @@ ul {
   padding: 75px;
   position: relative;
   z-index: 8; }
+  @media (max-width: 550px) {
+    .page-container {
+      padding-left: 24px; } }
 
 .page-row {
   display: flex;
@@ -1135,7 +1165,20 @@ ul {
     height: auto; }
 
 .page-prendre_contact {
-  background-color: rgba(255, 255, 255, 0.5); }
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 24px; }
+  @media (max-width: 550px) {
+    .page-prendre_contact {
+      padding: 8px; } }
+  .page-prendre_contact .gform_page_footer input {
+    background-color: #254FBC;
+    padding: 0.8em 1.25em;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer; }
 
 .cta {
   color: #000;

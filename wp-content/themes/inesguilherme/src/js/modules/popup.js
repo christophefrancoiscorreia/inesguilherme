@@ -2,8 +2,8 @@ jQuery(function($){
     const body = $('body');
     setTimeout(function(){
         $('#popup').fadeIn(550);
-    }, 62000);
- 
+    }, 24000);
+
     body.on('click', '.modal-close', function(e){ 
         e.preventDefault();
         $('.modal').hide(); 

@@ -15,7 +15,7 @@
  ?>
 </main>
 <?php 
-if(!is_page(12)){
+if(!is_page([12, 10])){
 	include('components/popup_confirm.php');  
 }
 
