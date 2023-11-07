@@ -52,79 +52,82 @@
       strong
         font-size: 18px
 
-    .iban
-      padding: 24px
-      background-color: #fff
-      text-align: left
-      color: #111
-      max-width: 400px
-      margin: auto
-      border-radius: 16px
+.iban
+  padding: 24px
+  background-color: #fff
+  text-align: left
+  color: #111 !important
+  max-width: 400px
+  margin: auto
+  border-radius: 16px
+  font-size: 12px
+
+  *
+    color: #111 !important
+
+
+  [data-copy]
+    cursor: pointer
+    &:first-child
+      margin-bottom: 25px
+
+
+    .title
+      display: flex
+      align-items: center
+      margin-bottom: 0.5em
+      font-size: 16px
+
+      svg
+        margin-right: 0.5em
+
+      &.copied::after
+        content: 'Copiado'
+        display: inline-block
+        color: white
+        background-color: green
+        padding: 4px
+        font-size: 12px
+        margin-left: 20px
+        border-radius: 2px
+
+      &.error::after
+        content: 'Erro'
+        display: inline-block
+        color: white
+        background-color: red
+        padding: 4px
+        font-size: 12px
+        margin-left: 20px
+        border-radius: 2px
+
+  .gform_wrapper
+    padding-top: 20px
+    margin-top: 20px
+    border-top: 1px solid #eee
+
+    .gform_footer
       font-size: 12px
- 
+      display: flex
+      justify-content: center
+        
 
-      [data-copy]
+      input
+        color: #fff !important
+        background-color: #001959
+        border-style: solid
+        border-color: #001959
+        border-radius: 3em
+        border-width: 1px
+        padding: 1em 1.5em
+        line-height: 1em
+        font-size: 1em
+        transition: .25s
         cursor: pointer
-        &:first-child
-          margin-bottom: 25px
+        display: inline-flex
+        align-items: center
+        text-transform: uppercase
 
-
-        .title
-          display: flex
-          align-items: center
-          margin-bottom: 0.5em
-          font-size: 16px
-
-          svg
-            margin-right: 0.5em
-
-          &.copied::after
-            content: 'Copiado'
-            display: inline-block
-            color: white
-            background-color: green
-            padding: 4px
-            font-size: 12px
-            margin-left: 20px
-            border-radius: 2px
-
-          &.error::after
-            content: 'Erro'
-            display: inline-block
-            color: white
-            background-color: red
-            padding: 4px
-            font-size: 12px
-            margin-left: 20px
-            border-radius: 2px
-
-      .gform_wrapper
-        padding-top: 20px
-        margin-top: 20px
-        border-top: 1px solid #eee
-
-        .gform_footer
-          font-size: 12px
-          display: flex
-          justify-content: center
-            
-
-          input
-            color: #fff
-            background-color: #001959
-            border-style: solid
-            border-color: #001959
-            border-radius: 3em
-            border-width: 1px
-            padding: 1em 1.5em
-            line-height: 1em
-            font-size: 1em
-            transition: .25s
-            cursor: pointer
-            display: inline-flex
-            align-items: center
-            text-transform: uppercase
-
-        .gform_title
-          color: #000
+    .gform_title
+      color: #000
 

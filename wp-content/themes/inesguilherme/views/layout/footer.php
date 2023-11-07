@@ -16,7 +16,7 @@
 </main>
 <?php 
 if(!is_page([12, 10])){
-	include('components/popup_confirm.php');  
+	//include('components/popup_confirm.php');  
 }
 
 wp_footer(); ?>

@@ -680,26 +680,26 @@ ul {
       font-size: 70px;
       line-height: .8em;
       font-weight: 400;
-      padding-bottom: 215px;
+      padding-bottom: 170px;
       text-shadow: 0 0 8px rgba(0, 0, 0, 0.6); }
     .home-slide.one h2 {
       line-height: 1.5em;
-      font-weight: 300;
-      font-size: 20px;
+      font-weight: 600;
+      font-size: 18px;
       letter-spacing: 2px;
       padding-bottom: 25px;
       text-transform: uppercase; }
-    .home-slide.one h3 {
+    .home-slide.one p {
       line-height: 1.5em;
-      font-weight: 300;
-      font-size: 20px;
+      font-weight: 600;
+      font-size: 16px;
       letter-spacing: 2px;
-      text-transform: uppercase; }
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+      text-transform: unset; }
     .home-slide.one .home-slide--wrapper {
       padding: 24px;
       position: relative;
-      z-index: 88;
-      margin-top: -120px; }
+      z-index: 88; }
   .home-slide.two {
     background-color: red;
     background-image: url(../img/home/ineedyou.gif);
@@ -717,7 +717,7 @@ ul {
       letter-spacing: 3px;
       text-transform: uppercase; }
     .home-slide.two p {
-      margin-bottom: 1em; }
+      margin-bottom: 2em; }
     .home-slide.two::after {
       content: '';
       position: absolute;
@@ -799,20 +799,22 @@ ul {
       text-transform: uppercase; }
   .home-slide.six {
     background-color: grey;
-    background-image: url(../img/home/callcenter.gif);
+    background-image: url(../img/home/office.gif);
     background-size: cover;
     background-position: center; }
     .home-slide.six h2 {
-      padding-bottom: 25px;
-      font-size: 40px;
+      font-size: 30px;
       letter-spacing: 3px;
-      text-transform: uppercase;
-      text-shadow: 0 0 0.25em rgba(0, 0, 0, 0.5); }
+      text-shadow: 0 0 0.25em rgba(0, 0, 0, 0.5);
+      padding: 0; }
+      .home-slide.six h2 span {
+        font-size: 0.5em; }
     .home-slide.six .texto {
-      padding: 15px 0 40px;
+      padding: 15px 0 20px;
       color: #fff;
-      font-size: 18px;
-      line-height: 2em; }
+      font-size: 14px;
+      line-height: 2em;
+      text-transform: unset; }
     .home-slide.six::after {
       content: '';
       position: absolute;
@@ -822,6 +824,8 @@ ul {
       height: 100%;
       background-color: rgba(0, 0, 0, 0.3);
       z-index: 8; }
+    .home-slide.six .home-slide--cta {
+      padding: 10px 0; }
   .home-slide.seven {
     background-color: black;
     background-image: url(../img/home/sleeping.gif);
@@ -911,69 +915,72 @@ ul {
       color: #FFF; }
       .patrocinios-content .texto strong {
         font-size: 18px; }
-    .patrocinios-content .iban {
-      padding: 24px;
-      background-color: #fff;
-      text-align: left;
-      color: #111;
-      max-width: 400px;
-      margin: auto;
-      border-radius: 16px;
-      font-size: 12px; }
-      .patrocinios-content .iban [data-copy] {
-        cursor: pointer; }
-        .patrocinios-content .iban [data-copy]:first-child {
-          margin-bottom: 25px; }
-        .patrocinios-content .iban [data-copy] .title {
-          display: flex;
-          align-items: center;
-          margin-bottom: 0.5em;
-          font-size: 16px; }
-          .patrocinios-content .iban [data-copy] .title svg {
-            margin-right: 0.5em; }
-          .patrocinios-content .iban [data-copy] .title.copied::after {
-            content: 'Copiado';
-            display: inline-block;
-            color: white;
-            background-color: green;
-            padding: 4px;
-            font-size: 12px;
-            margin-left: 20px;
-            border-radius: 2px; }
-          .patrocinios-content .iban [data-copy] .title.error::after {
-            content: 'Erro';
-            display: inline-block;
-            color: white;
-            background-color: red;
-            padding: 4px;
-            font-size: 12px;
-            margin-left: 20px;
-            border-radius: 2px; }
-      .patrocinios-content .iban .gform_wrapper {
-        padding-top: 20px;
-        margin-top: 20px;
-        border-top: 1px solid #eee; }
-        .patrocinios-content .iban .gform_wrapper .gform_footer {
-          font-size: 12px;
-          display: flex;
-          justify-content: center; }
-          .patrocinios-content .iban .gform_wrapper .gform_footer input {
-            color: #fff;
-            background-color: #001959;
-            border-style: solid;
-            border-color: #001959;
-            border-radius: 3em;
-            border-width: 1px;
-            padding: 1em 1.5em;
-            line-height: 1em;
-            font-size: 1em;
-            transition: .25s;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            text-transform: uppercase; }
-        .patrocinios-content .iban .gform_wrapper .gform_title {
-          color: #000; }
+
+.iban {
+  padding: 24px;
+  background-color: #fff;
+  text-align: left;
+  color: #111 !important;
+  max-width: 400px;
+  margin: auto;
+  border-radius: 16px;
+  font-size: 12px; }
+  .iban * {
+    color: #111 !important; }
+  .iban [data-copy] {
+    cursor: pointer; }
+    .iban [data-copy]:first-child {
+      margin-bottom: 25px; }
+    .iban [data-copy] .title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5em;
+      font-size: 16px; }
+      .iban [data-copy] .title svg {
+        margin-right: 0.5em; }
+      .iban [data-copy] .title.copied::after {
+        content: 'Copiado';
+        display: inline-block;
+        color: white;
+        background-color: green;
+        padding: 4px;
+        font-size: 12px;
+        margin-left: 20px;
+        border-radius: 2px; }
+      .iban [data-copy] .title.error::after {
+        content: 'Erro';
+        display: inline-block;
+        color: white;
+        background-color: red;
+        padding: 4px;
+        font-size: 12px;
+        margin-left: 20px;
+        border-radius: 2px; }
+  .iban .gform_wrapper {
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #eee; }
+    .iban .gform_wrapper .gform_footer {
+      font-size: 12px;
+      display: flex;
+      justify-content: center; }
+      .iban .gform_wrapper .gform_footer input {
+        color: #fff !important;
+        background-color: #001959;
+        border-style: solid;
+        border-color: #001959;
+        border-radius: 3em;
+        border-width: 1px;
+        padding: 1em 1.5em;
+        line-height: 1em;
+        font-size: 1em;
+        transition: .25s;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        text-transform: uppercase; }
+    .iban .gform_wrapper .gform_title {
+      color: #000; }
 
 .error--main {
   position: relative;
